@@ -1,0 +1,288 @@
+/*
+Theme Name: CelebNews
+Theme URI:  https://afthemes.com/products/celebnews/
+Author:     AF themes
+Author URI: https://afthemes.com/
+Description: CelebNews is a specialized WordPress child theme on the MoreNews platform designed for celebrity blogs, music and entertainment magazines, artist portfolios and multimedia portals; it focuses on showbiz-ready layouts with banner placements, bold visual styles, social media integration and media-friendly sections (audio/video galleries, event lists, artist profiles), while inheriting MoreNews’ header & footer builder, starter sites and block patterns for fast setup and custom layouts using Gutenberg, Elementor, Brizy, Beaver Builder, Visual Composer or Divi; CelebNews is AMP-ready, SEO and Core Web Vitals optimized, GDPR and WCAG-conscious, includes custom widgets and WooCommerce support for merch or ticket sales, and ships with multilingual starter content (Spanish, German, French, Portuguese, Russian, Italian, Japanese, Dutch, Arabic and more) plus RTL support — choose CelebNews when you need a high-style, performance-focused theme for entertainment and pop-culture publishing. https://afthemes.com/products/celebnews/
+Template: morenews
+Version: 1.1.2
+Requires at least: 5.0
+Requires PHP: 5.0
+Tested up to: 6.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: celebnews
+Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+CelebNews WordPress Theme, Copyright 2025 AF themes
+CelebNews is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+div#main-navigation-bar {
+    background: #FFCC00;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    line-height: 1.7;
+}
+
+body:not(.home) .header-layout-compressed-full .full-width.af-transparent-head .af-for-transparent .main-navigation .menu>ul>li>a,
+body .header-layout-compressed .compress-bar-mid .date-bar-mid,
+body .main-navigation ul.menu>li>a,
+body .main-navigation ul li a,
+body.aft-dark-mode .main-navigation ul li a:hover,
+body .morenews-header .search-icon:visited,
+body .morenews-header .search-icon:hover,
+body .morenews-header .search-icon:focus,
+body .morenews-header .search-icon:active,
+body .morenews-header .search-icon {
+    color: #111111;
+}
+
+body .header-layout-side .offcanvas-menu span,
+body .header-layout-centered .offcanvas-menu span,
+body .ham:before,
+body .ham:after,
+body .ham {
+    background-color: #111111;
+}
+
+@media screen and (max-width: 990px) {
+    body .morenews-header.header-layout-centered .search-watch.aft-show-on-mobile .search-icon {
+        color: #111111;
+    }
+
+    .header-layout-centered .main-navigation .toggle-menu a,
+    .header-layout-side .main-navigation .toggle-menu a,
+    .header-layout-compressed-full .main-navigation .toggle-menu a {
+        outline-color: #111111;
+    }
+}
+
+
+
+.exclusive-posts .exclusive-now,
+.morenews-header.header-layout-centered .top-bar-right div.custom-menu-link>a,
+.morenews-header.header-layout-compressed-full .top-bar-right div.custom-menu-link>a,
+.morenews-header.header-layout-side .search-watch div.custom-menu-link>a {
+    background: #DD0000;
+}
+
+.exclusive-posts .exclusive-now {
+    background: #DD0000;
+}
+
+.main-navigation .menu-description {
+    background-color: #DD0000;
+}
+
+.main-navigation .menu-description:after {
+    border-top: 5px solid #DD0000;
+}
+
+.morenews-header div.custom-menu-link>a {
+    background: #DD0000;
+}
+
+.aft-dark-mode .aft-main-banner-wrapper .af-slick-navcontrols,
+.aft-dark-mode .morenews-widget .af-slick-navcontrols,
+.aft-dark-mode .morenews-customizer .section-wrapper .af-slick-navcontrols,
+
+body.aft-dark-mode.single-post-title-full .entry-header-details,
+body.aft-dark-mode .main-navigation .menu .menu-mobile,
+body.aft-dark-mode .main-navigation .menu>ul>li>ul,
+body.aft-dark-mode .main-navigation .menu>ul ul,
+body.aft-dark-mode .af-search-form,
+body.aft-dark-mode .aft-popular-taxonomies-lists,
+body.aft-dark-mode .exclusive-slides::before,
+body.aft-dark-mode .exclusive-slides::after,
+body.aft-dark-mode .banner-exclusive-posts-wrapper .exclusive-posts:before,
+
+body.aft-dark-mode.woocommerce div.product,
+body.aft-dark-mode.home.blog main.site-main,
+body.aft-dark-mode main.site-main,
+body.aft-dark-mode.single main.site-main .entry-content-wrap,
+body.aft-dark-mode .af-main-banner-latest-posts.grid-layout.morenews-customizer .container-wrapper,
+body.aft-dark-mode .af-middle-header,
+body.aft-dark-mode .mid-header-wrapper,
+body.aft-dark-mode .comments-area,
+body.aft-dark-mode .af-breadcrumbs,
+.aft-dark-mode .morenews-customizer,
+body.aft-dark-mode .morenews-widget {
+    background-color: #111111;
+}
+
+.af-cat-widget-carousel a.morenews-categories.category-color-1 {
+    background-color: #0033A0;
+
+}
+
+a.morenews-categories.category-color-1 {
+    color: #0033A0;
+}
+
+.af-cat-widget-carousel a.morenews-categories.category-color-2 {
+    background-color: #FFCC00;
+
+}
+
+.categories-inside-image a.morenews-categories.category-color-2 {
+    color: #111111;
+}
+
+a.morenews-categories.category-color-2 {
+    color: #FFCC00;
+}
+
+.gt_float_switcher .gt_options a {
+    background-color: #fff !important;
+    color: #444 !important;
+}
+
+.woocommerce #respond input#submit.disabled,
+.woocommerce #respond input#submit:disabled,
+.woocommerce #respond input#submit:disabled[disabled],
+.woocommerce a.button.disabled,
+.woocommerce a.button:disabled,
+.woocommerce a.button:disabled[disabled],
+.woocommerce button.button.disabled,
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled],
+.woocommerce input.button.disabled,
+.woocommerce input.button:disabled,
+.woocommerce input.button:disabled[disabled],
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+body .entry-content>[class*="wp-block-"] .woocommerce a:not(.has-text-color).button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce-account .addresses .title .edit,
+.wp-block-button.wc-block-components-product-button .wp-block-button__link,
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
+.wc-block-grid .wp-block-button__link,
+.wc-block-grid .wp-block-button__link:visited,
+.wc-block-grid .wp-block-button__link:hover,
+body.aft-default-mode .woocommerce-notices-wrapper .button:hover,
+body.aft-dark-mode .woocommerce-notices-wrapper .button:hover,
+.woocommerce-notices-wrapper .button,
+.aft-dark-mode .entry-content a.woocommerce-button.view,
+.aft-dark-mode .entry-content a.woocommerce-button.view:hover,
+body.woocommerce a.button.add_to_cart_button:hover,
+:root .wc-block-featured-product__link :where(.wp-element-button, .wp-block-button__link),
+:root .wc-block-featured-product__link :where(.wp-element-button:hover, .wp-block-button__link:hover),
+:root .wc-block-featured-category__link :where(.wp-element-button, .wp-block-button__link),
+:root .wc-block-featured-category__link :where(.wp-element-button:hover, .wp-block-button__link:hover),
+body .hustle-button,
+body .hustle-button:hover,
+
+body .morenews-pagination .nav-links .page-numbers.current,
+body.aft-default-mode .grid-design-texts-over-image .aft-readmore-wrapper a.aft-readmore:hover,
+.grid-design-texts-over-image .aft-readmore-wrapper a.aft-readmore:hover,
+body.aft-dark-mode .grid-design-texts-over-image .aft-readmore-wrapper a.aft-readmore:hover,
+.aft-readmore-wrapper a.aft-readmore:hover,
+body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover,
+body.aft-default-mode .aft-readmore-wrapper a.aft-readmore:hover,
+footer.site-footer .aft-readmore-wrapper a.aft-readmore:hover,
+body.aft-default-mode .reply a,
+body.aft-dark-mode .reply a,
+
+.widget-title-fill-and-border .wp-block-search__label,
+.widget-title-fill-and-border .wp-block-group .wp-block-heading,
+.widget-title-fill-and-no-border .wp-block-search__label,
+.widget-title-fill-and-no-border .wp-block-group .wp-block-heading,
+
+.widget-title-fill-and-border .wp_post_author_widget .widget-title .header-after,
+.widget-title-fill-and-border .widget-title .heading-line,
+.widget-title-fill-and-border .aft-posts-tabs-panel .nav-tabs>li>a.active,
+.widget-title-fill-and-border .aft-main-banner-wrapper .widget-title .heading-line,
+.widget-title-fill-and-no-border .wp_post_author_widget .widget-title .header-after,
+.widget-title-fill-and-no-border .widget-title .heading-line,
+.widget-title-fill-and-no-border .aft-posts-tabs-panel .nav-tabs>li>a.active,
+.widget-title-fill-and-no-border .aft-main-banner-wrapper .widget-title .heading-line,
+
+.aft-dark-mode .is-style-fill a.wp-block-button__link:not(.has-text-color),
+.aft-default-mode .is-style-fill a.wp-block-button__link:not(.has-text-color),
+
+div.wpforms-container-full button[type=submit]:hover,
+div.wpforms-container-full button[type=submit]:not(:hover):not(:active),
+
+body.aft-dark-mode .aft-popular-taxonomies-lists span,
+body.aft-default-mode .aft-popular-taxonomies-lists span,
+.af-post-format i,
+.read-img .af-post-format i,
+.af-youtube-slider .af-video-wrap .af-bg-play,
+.af-youtube-slider .af-video-wrap .af-hide-iframe i,
+.af-youtube-video-list .entry-header-yt-video-wrapper .af-yt-video-play i,
+.woocommerce-product-search button[type="submit"],
+input.search-submit,
+body.aft-default-mode button,
+body.aft-default-mode input[type="button"],
+body.aft-default-mode input[type="reset"],
+body.aft-default-mode input[type="submit"],
+body.aft-dark-mode button,
+body.aft-dark-mode input[type="button"],
+body.aft-dark-mode input[type="reset"],
+body.aft-dark-mode input[type="submit"],
+body .trending-posts-vertical .trending-no,
+body.aft-dark-mode .btn-style1 a,
+body.aft-default-mode .btn-style1 a,
+body.aft-dark-mode #scroll-up {
+    color: #111111;
+}
+
+body.aft-default-mode #scroll-up::before,
+body.aft-dark-mode #scroll-up::before {
+    border-bottom-color: #111111;
+}
+
+a.sidr-class-sidr-button-close::before,
+a.sidr-class-sidr-button-close::after {
+    background-color: #111111;
+}
+
+.morenews-header .top-header,
+footer.site-footer {
+    background-color: #090909;
+}
+
+body .reply a,
+div#respond input[type="submit"],
+.btn-style1 a:visited,
+.btn-style1 a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;   
+}
+
+.aft-default-mode .entry-content>.wp-block-heading a:not(.has-link-color) {
+    border-color: #FFCC00;
+}
+
+
+@media screen and (max-width: 768px) {
+    .entry-header .read-details .entry-meta .posts-author {
+        display: block;
+        margin-top: 20px;
+    }
+    .entry-header .read-details .entry-meta .posts-date {
+        display: block;
+        padding: 5px 0;
+    }
+}
