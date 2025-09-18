@@ -5,7 +5,7 @@ Author:     AF themes
 Author URI: https://afthemes.com/
 Description: CelebNews is a specialized WordPress child theme on the MoreNews platform designed for celebrity blogs, music and entertainment magazines, artist portfolios and multimedia portals; it focuses on showbiz-ready layouts with banner placements, bold visual styles, social media integration and media-friendly sections (audio/video galleries, event lists, artist profiles), while inheriting MoreNews’ header & footer builder, starter sites and block patterns for fast setup and custom layouts using Gutenberg, Elementor, Brizy, Beaver Builder, Visual Composer or Divi; CelebNews is AMP-ready, SEO and Core Web Vitals optimized, GDPR and WCAG-conscious, includes custom widgets and WooCommerce support for merch or ticket sales, and ships with multilingual starter content (Spanish, German, French, Portuguese, Russian, Italian, Japanese, Dutch, Arabic and more) plus RTL support — choose CelebNews when you need a high-style, performance-focused theme for entertainment and pop-culture publishing. https://afthemes.com/products/celebnews/
 Template: morenews
-Version: 1.1.2
+Version: 1.1.3
 Requires at least: 5.0
 Requires PHP: 5.0
 Tested up to: 6.8
@@ -34,25 +34,33 @@ textarea {
     line-height: 1.7;
 }
 
+
+
 body:not(.home) .header-layout-compressed-full .full-width.af-transparent-head .af-for-transparent .main-navigation .menu>ul>li>a,
 body .header-layout-compressed .compress-bar-mid .date-bar-mid,
-body .main-navigation ul.menu>li>a,
-body .main-navigation ul li a,
-body.aft-dark-mode .main-navigation ul li a:hover,
-body .morenews-header .search-icon:visited,
-body .morenews-header .search-icon:hover,
-body .morenews-header .search-icon:focus,
-body .morenews-header .search-icon:active,
-body .morenews-header .search-icon {
+body #main-navigation-bar #primary-menu>ul:not(.menu-mobile)>li>a,
+body #main-navigation-bar .search-icon:visited,
+body #main-navigation-bar .search-icon:hover,
+body #main-navigation-bar .search-icon:focus,
+body #main-navigation-bar .search-icon:active,
+body #main-navigation-bar .search-icon {
     color: #111111;
 }
 
-body .header-layout-side .offcanvas-menu span,
-body .header-layout-centered .offcanvas-menu span,
-body .ham:before,
-body .ham:after,
-body .ham {
+body .header-layout-side #main-navigation-bar .offcanvas-menu span,
+body .header-layout-centered #main-navigation-bar .offcanvas-menu span,
+body #main-navigation-bar .ham:before,
+body #main-navigation-bar .ham:after,
+body #main-navigation-bar .ham {
     background-color: #111111;
+}
+
+@media screen and (min-width: 993px) {
+
+    #main-navigation-bar .main-navigation .menu-desktop>.menu>li>a,
+    #main-navigation-bar .main-navigation .menu-desktop>li>a {
+        color: #111111;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -60,11 +68,21 @@ body .ham {
         color: #111111;
     }
 
+
     .header-layout-centered .main-navigation .toggle-menu a,
     .header-layout-side .main-navigation .toggle-menu a,
     .header-layout-compressed-full .main-navigation .toggle-menu a {
         outline-color: #111111;
     }
+}
+
+/* before */
+
+
+body #main-navigation-bar .aft-small-social-menu ul.menu>li>a,
+.top-header .main-navigation .menu>ul>li>a,
+#main-navigation-bar #primary-menu>ul:not(.menu-mobile)>li>a {
+    color: #111111;
 }
 
 
@@ -268,7 +286,7 @@ input[type="submit"] {
     padding: 5px 10px;
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: 700;   
+    font-weight: 700;
 }
 
 .aft-default-mode .entry-content>.wp-block-heading a:not(.has-link-color) {
@@ -281,6 +299,7 @@ input[type="submit"] {
         display: block;
         margin-top: 20px;
     }
+
     .entry-header .read-details .entry-meta .posts-date {
         display: block;
         padding: 5px 0;
