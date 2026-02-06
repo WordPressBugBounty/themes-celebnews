@@ -52,7 +52,6 @@ function celebnews_filter_default_theme_options($defaults)
     $defaults['select_main_banner_order'] = 'order-1';
     $defaults['select_update_post_filterby'] = 'cat';
     $defaults['secondary_color'] = '#FFCC00';
-    $defaults['global_show_min_read'] = 'no';
     $defaults['frontpage_content_type']  = 'frontpage-widgets-and-content';
     $defaults['featured_news_section_title'] = __('Featured News', 'celebnews');
     $defaults['show_featured_post_list_section']  = 1;
