@@ -5,7 +5,7 @@ Author:     AF themes
 Author URI: https://afthemes.com/
 Description: CelebNews is a specialized WordPress child theme on the MoreNews platform designed for celebrity blogs, music and entertainment magazines, artist portfolios and multimedia portals; it focuses on showbiz-ready layouts with banner placements, bold visual styles, social media integration and media-friendly sections (audio/video galleries, event lists, artist profiles), while inheriting MoreNews’ header & footer builder, starter sites and block patterns for fast setup and custom layouts using Gutenberg, Elementor, Brizy, Beaver Builder, Visual Composer or Divi; CelebNews is AMP-ready, SEO and Core Web Vitals optimized, GDPR and WCAG-conscious, includes custom widgets and WooCommerce support for merch or ticket sales, and ships with multilingual starter content (Spanish, German, French, Portuguese, Russian, Italian, Japanese, Dutch, Arabic and more) plus RTL support — choose CelebNews when you need a high-style, performance-focused theme for entertainment and pop-culture publishing. https://afthemes.com/products/celebnews/
 Template: morenews
-Version: 1.1.21
+Version: 1.1.22
 Requires at least: 4.0
 Requires PHP: 5.0
 Tested up to: 6.9
@@ -345,6 +345,11 @@ span.wpcf7-list-item label {
 form.wpcf7-form label input[type="checkbox"]{
     width: unset;
     margin: 0 10px 0 0;
+}
+
+.entry-content .gallery {
+    margin-top: 0;
+    margin-bottom: 24px;
 }
 
 @media screen and (max-width: 768px) {
